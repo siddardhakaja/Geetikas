@@ -2869,7 +2869,7 @@ textarea.form-control {
 
 .nav-text,
 .nav-icons {
-  margin: 0 0 10px 0;
+  margin: 0 0 1px 0;
 }
 
 .nav-text>li>a,
@@ -4299,7 +4299,7 @@ License - nucleoapp.com/license/
 .nav-tabs .nav-item .nav-link.active:after,
 .nav-tabs .nav-item .nav-link.active:hover:after,
 .nav-tabs .nav-item .nav-link.active:focus:after {
-  border-bottom: 11px solid #FFFFFF;
+  border-bottom: 11px solid #ffffff;
   border-left: 11px solid transparent;
   border-right: 11px solid transparent;
   content: "";
@@ -4549,7 +4549,7 @@ License - nucleoapp.com/license/
 }
 
 .navbar .navbar-collapse:after {
-  background-color: #FFFCF5;
+  background-color: #7EF9FF;
 }
 
 .navbar #navbarSupportedContent .nav-item {
@@ -6809,7 +6809,7 @@ License - nucleoapp.com/license/
   font-weight: 700;
   margin: 0;
   color: #ffffff;
-  background: #fbf8ec;
+  background: #2e80a7;
   background: -moz-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
   background: -webkit-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
   background: -ms-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
@@ -6928,7 +6928,7 @@ License - nucleoapp.com/license/
 }
 
 .section-light-blue {
-  background-color: #51cbce;
+  background-color: #7EF9FF;
   color: #FFFFFF;
 }
 

@@ -1,89 +1,381 @@
+<!--
+=========================================================
+ Paper Kit 2 - v2.2.0
+=========================================================
+ Product Page: https://www.creative-tim.com/product/paper-kit-2
+ Copyright 2019 Creative Tim (https://www.creative-tim.com)
+ Licensed under MIT (https://github.com/creativetimofficial/paper-kit-2/blob/master/LICENSE.md)
+ Coded by Creative Tim
+=========================================================
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+
+
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.3.2/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.3.2/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img//bakelogu_logo.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Bakeology-31
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./assets/css/paper-kit.css?v=2.2.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="./assets/demo/demo.css" rel="stylesheet" />
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<body class="index-page sidebar-collapse">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " color-on-scroll="300">
+    <div id = "nav"class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="#nav" rel="tooltip" data-placement="bottom" >
+          Bakeology-31
+        </a>
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+              <a href="#about" class="btn btn-link btn-info btn-round">About Us</a>  
+          </li>
+          <li class="nav-item">
+              <a href="#cakes" class="btn btn-link btn-info btn-round">Menu</a>  
+          </li>
+          <li class="nav-item">
+              <a href="#orderhere" class="btn btn-link btn-info btn-round">Order Here</a>  
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/geetika.jain.96742" target="_blank">
+              <i class="fa fa-facebook-square"></i>
+              <p class="d-lg-none">Facebook</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/gj_0831/" target="_blank">
+              <i class="fa fa-instagram"></i>
+              <p class="d-lg-none">Instagram</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  </nav>
+  <!-- End Navbar -->
+  <div class="page-header section-dark" style="background-image: url('./assets/img/cake_1.jpg')">
+    <div class="filter"></div>
+    <div class="content-center">
+      <div class="container">
+        <div class="title-brand">
+          <h1 class="presentation-title" style="font-size:4vw;">Bakeology-31</h1>
+          
+        </div>
+        <h2 class="presentation-subtitle text-center">Make Your Life Sweet...Everyone </h2>
+      </div>
+    </div>
+    <div class="moving-clouds" style="background-image: url('./assets/img/clouds.png'); "></div>
+  </div>
+  <div class="main">
+    <div id = "about">
+    <div class="section">
+    <div class="container">
+        <div class="title">
+          <h2>Baking out of Passion </h2>
+        </div>
+        <p class="mb-2" style="font-size:30px">Bakeology-31 for everyone is located in Ludhiana. We craft customizable premium sugar goods to make your palate sweetsome. </p>
+        <br/>
+    </div>
+    </div>
+    </div>
+    <div id = "OurWorks">
+    <div class="section section-light-blue">
+    <div class="container">
+        <div class="title">
+          <h3>The Taste That You Will Never Forget </h3>
+        </div>
+        <div class="section section-light-blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto">
+            <div class="card page-carousel">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <img class="d-block img-fluid" src="./assets/img/carousel/carousel-1.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Valentine's Day Desserts</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="./assets/img/carousel/carousel-2.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Almond Cherry Cupcakes</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="./assets/img/carousel/carousel-3.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Delicious Cake</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="./assets/img/carousel/carousel-4.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p >Pink Wedding Cake</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="left carousel-control carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="fa fa-angle-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="fa fa-angle-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div id = "cakes">
+    <div class="section" style="background-image: url('./assets/img/menu_bg3_cropped.jpg'); background-size: auto;" >
+    <div class="container">
+        <div class="title">
+           <style>
+          img {
+            width: 100%;
+            height: auto;
+              }
+      </style>
+      <body>
+      <style>
+body {
+  background-color: black;
+  font-family: cursive;
+}
 
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #7ef9ff, 0 0 40px #7ef9ff, 0 0 50px #7ef9ff, 0 0 60px #7ef9ff, 0 0 70px #7ef9ff;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+</style>
+<h1 class="glow">Menu</h1>
+        </div>
+      
+<table style="width:100%;font-size:200%; font-family: 'Brush Script MT', cursive; table-layout: auto;">
+  <tr>
+    <th style="font-size:200%">Iced Cakes</th>
+    <th style="font-size:200%">Dry Cakes</th> 
+  </tr>
+  <tr>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;border-right-color:coral">Black Forest</td>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;">Marble Drycake</td>
+
+  </tr>
+  <tr>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;">Bubblegum</td>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;">Rainbow Cake</td>
+    
+  </tr>
+  <tr>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;">Cappucino</td>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;">Dryfruit Cake</td>
+  </tr>
+   <tr>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;">Double Chocolate</td>
+    <th style="font-size:200% ">Surprises</th> 
+  </tr>
+   <tr>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;">Mix Fruit</td>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;">Brownies</td>
+  </tr>
+   <tr>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;">Pineapple</td>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;">Mirror Glaze Cake</td>
+  </tr>
+   <tr>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;">Pine Colada</td>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;">Pullout Cake</td>
+  </tr>
+   <tr>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;">Rose &Paan</td>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;">Piñata Smash Cake</td>
+  </tr>
+   <tr>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;">Strawberry</td>
+  </tr>
+   <tr>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;">Thandai &Kesar</td>
+  </tr>
+  <tr>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;">Vanilla &Tutti Fruity</td>
+  </tr>
+  <tr>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;">Vanilla &Chocochip</td>
+  </tr>
+  <tr>
+    <td style="font-weight:400; border-bottom-style: solid;
+  border-bottom-color: coral;">Vanilla &Almond</td>
+  </tr>
+</table>
+
+
+      </body>
+        <br/>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="orderhere">
+    <div class="section section-dark" style="background-image: url('./assets/img/contactus.jpg'); background-size: auto;" >
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto text-center">
+            <h2 class="title">Do you like what you see?</h2>
+            <p class="description">Contact us for more details</p>
+          </div>
+          <div class="col-md-5 ml-auto mr-auto download-area">
+            <a href=" https://wa.me/919814977732" class="btn btn-danger btn-round">Contact Us</a>
+          </div>
+        </div>
+        <div id="contactus">
+          <div class="col-md-8 ml-auto mr-auto">
+            <h2 class="title">Want more?</h2>
+            <h3 class ="title">We've just launched our new wedding cakes</h3>
+             
+          </div>
+         
+        </div>
+        <div class="row justify-content-md-center sharing-area text-center">
+          <div class="text-center col-md-12 col-lg-8">
+            <h2 class="title">Thank you for supporting us!</h2>
+          </div>
+          <div class="text-center col-md-12 col-lg-8">
+            <a href="" class="btn btn-instagram-bg instagram-sharrre btn-round" rel="tooltip" title="Share!">
+              <i class="fa fa-instagram"></i> Instagram
+            </a>
+            <a href="" class="btn btn-facebook-bg facebook-sharrre btn-round" rel="tooltip" title="Share!">
+              <i class="fa fa-facebook-square"></i> Facebook
+            </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <footer class="footer footer-black  footer-white ">
+      <div class="container">
+        <div class="row">
+          
+          <div class="credits ml-auto">
+            <span class="copyright">
+              ©
+              <script>
+                document.write(new Date().getFullYear())
+              </script>, made by Sid.
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--   Core JS Files   -->
+    <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script src="./assets/js/plugins/bootstrap-switch.js"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+    <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+    <script src="./assets/js/plugins/moment.min.js"></script>
+    <script src="./assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+    <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
+    <script src="./assets/js/paper-kit.js?v=2.2.0" type="text/javascript"></script>
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      $(document).ready(function() {
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        if ($("#datetimepicker").length != 0) {
+          $('#datetimepicker').datetimepicker({
+            icons: {
+              time: "fa fa-clock-o",
+              date: "fa fa-calendar",
+              up: "fa fa-chevron-up",
+              down: "fa fa-chevron-down",
+              previous: 'fa fa-chevron-left',
+              next: 'fa fa-chevron-right',
+              today: 'fa fa-screenshot',
+              clear: 'fa fa-trash',
+              close: 'fa fa-remove'
+            }
+          });
+        }
+
+        function scrollToDownload() {
+
+          if ($('.section-download').length != 0) {
+            $("html, body").animate({
+              scrollTop: $('.section-download').offset().top
+            }, 1000);
+          }
         }
       });
     </script>
-  </body>
+</body>
+
 </html>
